@@ -14,9 +14,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@chakra-ui/core": "1.0.0-beta",
+    "@chakra-ui/theme": "1.0.0-beta",
     "gatsby": "^2.23.10",
+    "gatsby-plugin-chakra-ui": "^1.0.0-next.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "typescript": "^3.9.5"
   },
   "devDependencies": {
     "prettier": "2.0.5"
