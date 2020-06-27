@@ -1,21 +1,20 @@
 import React from "react"
-import { Flex } from "@chakra-ui/core"
+import { Stack, Flex, Text } from "@chakra-ui/core"
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <Flex
-      direction="column"
-      margin="0 auto"
-      maxW="960"
-      padding="0 1.0875rem 1.45rem"
-    >
-      <body>{children}</body>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </Flex>
+    <Stack padding="1em" height="100vh" justify="space-between" align="center">
+      <Stack as="body" width="100%" align="center" maxWidth="lg">
+        {children}
+      </Stack>
+      <Flex as="footer" width="100%">
+        <Text>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </Text>
+      </Flex>
+    </Stack>
   )
 }
 

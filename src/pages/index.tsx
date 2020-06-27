@@ -1,12 +1,27 @@
 import React from "react"
-import { Flex, Heading } from "@chakra-ui/core"
+import { Button, Flex } from "@chakra-ui/core"
 import Layout from "../components/layout"
+import Hero from "../components/hero"
+import { navigate, Link } from "gatsby"
 
 const Home = () => {
   return (
     <Layout>
-      <Heading as="h1">Jason Huang</Heading>
+      <Hero
+        name="Jason Huang"
+        description="High School Student, Software Developer, Linux Enthusiast"
+      />
+
+      <Flex direction="column" justify="center" margin="1em" width="100%">
+        <Button as={Link} to="/projects/" margin="1em">
+          Projects
+        </Button>
+
+        <Button as={Link} to="/resume/" margin="1em">
+          Resume
+        </Button>
+      </Flex>
     </Layout>
   )
 }
-export default Home;
+export default Home
