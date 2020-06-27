@@ -7,7 +7,7 @@ const Hero: React.FC<{ name: string; description: string }> = ({
 }) => {
   return (
     <Stack align="center" textAlign="center">
-      <Text fontFamily="monospace" fontSize={["2xl", "3xl"]}>
+      <Text fontFamily="mono" fontSize={["2xl", "3xl"]}>
         ~$ whoami
       </Text>
       <Heading as="h1" fontSize={["5xl", "6xl"]}>
