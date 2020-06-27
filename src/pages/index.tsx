@@ -8,7 +8,8 @@ const Home = () => {
   return (
     <Layout>
       <Hero
-        name="Jason Huang"
+        terminal="~$ whoami"
+        title="Jason Huang"
         description="High School Student, Software Developer, Linux Enthusiast"
       />
 
