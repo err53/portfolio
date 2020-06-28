@@ -8,6 +8,7 @@ module.exports = {
     assert: {
       preset: "lighthouse:recommended",
       assertions: {
+        "unused-javascript": "off",
         "first-contentful-paint": [
           "warn",
           {
