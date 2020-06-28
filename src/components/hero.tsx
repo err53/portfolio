@@ -1,11 +1,11 @@
 import React from "react"
 import { Text, Stack, Heading } from "@chakra-ui/core"
 
-const Hero: React.FC<{ terminal: string, title: string; description: string }> = ({
-  terminal,
-  title,
-  description,
-}) => {
+const Hero: React.FC<{
+  terminal: string
+  title: string
+  description: string
+}> = ({ terminal, title, description }) => {
   return (
     <Stack width="100%">
       <Text fontFamily="mono" fontSize={["2xl", "3xl"]}>

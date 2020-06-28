@@ -21,7 +21,7 @@ function isMetas(
   | { property: string; content: any; name?: undefined }
 > {
   if (meta != null) {
-    return true;
+    return true
   }
   return false
 }
