@@ -1109,7 +1109,7 @@
     "@chakra-ui/hooks" "^1.0.0-next.2"
     "@chakra-ui/utils" "^1.0.0-next.2"
 
-"@chakra-ui/core@1.0.0-beta":
+"@chakra-ui/core@1.0.0-next.2":
   version "1.0.0-next.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/core/-/core-1.0.0-next.2.tgz#dd512ebd46819b6343179897c1b3d5d8f9c51b56"
   integrity sha512-7IreIrd5uNxIP9sqqxlbF4csJx6ArxOn3mid1QPztThWcWQhR05B2zISncwEd7s+PAY/QszSP9WWAQWZkZ8Bfw==
@@ -1474,7 +1474,7 @@
     "@types/tinycolor2" "1.4.2"
     tinycolor2 "1.4.1"
 
-"@chakra-ui/theme@1.0.0-beta":
+"@chakra-ui/theme@1.0.0-next.2":
   version "1.0.0-next.2"
   resolved "https://registry.yarnpkg.com/@chakra-ui/theme/-/theme-1.0.0-next.2.tgz#97feabb35c8c4994475c0c2e7dac5fb803ecf7ac"
   integrity sha512-ZAhat2JJA+QQ/QIQgJlIN+ChAXq6QJEIUP8bagxuGoZjIiXdqbiYUPwgqRXfKrExKVZfwTmXMI4hkEfol5hR3A==
@@ -1976,6 +1976,24 @@
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.2.tgz#7c6dc4ecef16149fd7a736710baa1b811017fdca"
   integrity sha512-JlGTGRYHC2QK+DDbePyXdBdooxFq2+noLfWpRqJtkxcb/oYWzOF0kcbfvvbWrwevCC1l6hLUg1wHYT+ona5BWQ==
+
+"@prefresh/core@^0.7.0":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@prefresh/core/-/core-0.7.1.tgz#75c73975dbbf66d70fc698eda26aeae1767d3c07"
+  integrity sha512-wa7M0cTV7DcBu3vw4MEtVXWFxsdHXbky8qzhBFJ/HEp7fdEmvOateYmGOjSeOn+QaKeAqUBGTMnTyVER0lamNA==
+
+"@prefresh/utils@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@prefresh/utils/-/utils-0.2.0.tgz#1d269210758346e8e1f8a6410b61ba3e4fb982f9"
+  integrity sha512-mxJraGQLPmvAuI8Br0y/pvJWI2sy5IHU5veZ5GglP1gnb4dpp5rjIVjHdlVvrXUKGtFIpB3zxrqS+vYn1cQ01A==
+
+"@prefresh/webpack@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@prefresh/webpack/-/webpack-0.8.1.tgz#b858f5c06ae4532703f79757a96e8ece2a6fffd9"
+  integrity sha512-/35IQeMpKJDJyd6FGgaPB9dHMv0WqKUZYVyKa84PgNFoDNf8EHA0DqCqA4ZtWercK3WRtVJuHoucXzuAxSSb6g==
+  dependencies:
+    "@prefresh/core" "^0.7.0"
+    "@prefresh/utils" "^0.2.0"
 
 "@reach/alert@0.10.3":
   version "0.10.3"
@@ -6304,6 +6322,14 @@ gatsby-plugin-page-creator@^2.3.11:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
+gatsby-plugin-preact@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-4.0.5.tgz#2a69996839b270ef2aa1235d92acb09def85a591"
+  integrity sha512-VRZ82+1CwrKvFfISGD2X3QV+cPBqgwBkhmJh+rXgIfpq/XO/TIPNTKLxN65h5fZ64jceKAAL+13Z5azBkJusmg==
+  dependencies:
+    "@prefresh/webpack" "^0.8.1"
+    react-refresh "^0.8.2"
+
 gatsby-plugin-react-helmet@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.3.6.tgz#824202bdb2e83f90956e4ca1c076fd4dbbf97e61"
@@ -10303,6 +10329,18 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.3
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+preact-render-to-string@^5.1.9:
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/preact-render-to-string/-/preact-render-to-string-5.1.9.tgz#201d7bb4c20899b68f5cbda705d36c45305f7efb"
+  integrity sha512-fuuZP/nBcsYvfI5Mjs8R0wVA8jPbnAsr/UQ5Y5/p9Qg4HAz9vSVJ03iejBVw4YGV8jkUCJv0++k4zwp6qjx2Kg==
+  dependencies:
+    pretty-format "^3.8.0"
+
+preact@^10.4.4:
+  version "10.4.4"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.4.4.tgz#0bd6d759ec2f8684aaf8c63c7f076191e46528cf"
+  integrity sha512-EaTJrerceyAPatQ+vfnadoopsMBZAOY7ak9ogVdUi5xbpR8SoHgtLryXnW+4mQOwt21icqoVR1brkU2dq7pEBA==
+
 prebuild-install@^5.3.4:
   version "5.3.5"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.3.5.tgz#e7e71e425298785ea9d22d4f958dbaccf8bb0e1b"
@@ -10366,6 +10404,11 @@ pretty-format@^25.5.0:
     ansi-regex "^5.0.0"
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
+
+pretty-format@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-3.8.0.tgz#bfbed56d5e9a776645f4b1ff7aa1a3ac4fa3c385"
+  integrity sha1-v77VbV6ad2ZF9LH/eqGjrE+jw4U=
 
 private@^0.1.8:
   version "0.1.8"
@@ -10734,6 +10777,11 @@ react-refresh@^0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.7.2.tgz#f30978d21eb8cac6e2f2fde056a7d04f6844dd50"
   integrity sha512-u5l7fhAJXecWUJzVxzMRU2Zvw8m4QmDNHlTrT5uo3KBlYBhmChd7syAakBoay1yIiVhx/8Fi7a6v6kQZfsw81Q==
+
+react-refresh@^0.8.2:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
+  integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
 react-side-effect@^2.1.0:
   version "2.1.0"

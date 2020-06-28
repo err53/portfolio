@@ -3,7 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
 module.exports = {
   siteMetadata: {
     title: `Jason Huang`,
@@ -29,5 +28,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    "gatsby-plugin-preact",
   ],
 }
