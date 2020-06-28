@@ -3,7 +3,7 @@ module.exports = {
     collect: {
       url: ["http://localhost/index.html"],
       staticDistDir: "public",
-      numberOfRuns: 2,
+      numberOfRuns: 5,
     },
     assert: {
       preset: "lighthouse:recommended",
