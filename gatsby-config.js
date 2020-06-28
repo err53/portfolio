@@ -21,7 +21,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#edf2f7`,
-        display: `browser`,
+        display: `minimal-ui`,
         icon: `src/images/icon.svg`,
         icon_options: {
           purpose: `maskable`,
