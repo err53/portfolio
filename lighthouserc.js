@@ -4,7 +4,6 @@ module.exports = {
       url: ["http://localhost/index.html"],
       staticDistDir: "public",
       numberOfRuns: 2,
-      staticDistDir: "./public",
     },
     assert: {
       preset: "lighthouse:recommended",
