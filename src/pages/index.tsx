@@ -2,11 +2,13 @@ import React from "react"
 import { Button, Flex } from "@chakra-ui/core"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import { navigate, Link } from "gatsby"
+import { Link } from "gatsby"
+import SEO from "../components/seo"
 
 const Home = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero
         terminal="~$ whoami"
         title="Jason Huang"
