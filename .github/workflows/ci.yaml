@@ -15,11 +15,6 @@ jobs:
         with:
           path: node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
-      - name: Cache .lighthouseci
-        uses: actions/cache@v2
-        with:
-          path: .lighthouseci
-          key: ${{ runner.os }}-lighthouse
       - name: yarn install, build
         run: |
           yarn install
