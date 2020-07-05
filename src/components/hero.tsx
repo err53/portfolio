@@ -7,7 +7,7 @@ const Hero: React.FC<{
   description: string
 }> = ({ terminal, title, description }) => {
   return (
-    <Stack width="100%">
+    <Stack width="100%" pb="1em">
       <Text fontFamily="mono" fontSize={["2xl", "3xl"]}>
         {terminal}
       </Text>
