@@ -11,7 +11,7 @@ const Home = () => {
       <SEO title="Home" />
       <Navbar />
       <Hero
-        terminal="~$ whoami"
+        terminal="> whoami"
         title="Jason Huang"
         description="High School Student, Software Developer, Linux Enthusiast"
       />

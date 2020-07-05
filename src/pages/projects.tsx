@@ -10,7 +10,7 @@ const Projects = () => {
       <SEO title="Projects" />
       <Navbar />
       <Hero
-        terminal="~$ ls ~/projects"
+        terminal="> ls ~/projects"
         title="Projects"
         description="Some of the things I've worked on"
       />
