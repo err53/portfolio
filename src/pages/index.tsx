@@ -1,14 +1,15 @@
 import React from "react"
-import { Button, Flex } from "@chakra-ui/core"
+import { Text, Spacer } from "@chakra-ui/core"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import { Link } from "gatsby"
 import SEO from "../components/seo"
+import Navbar from "../components/navbar"
 
 const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <Navbar />
       <Hero
         terminal="~$ whoami"
         title="Jason Huang"

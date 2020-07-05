@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import SEO from "../components/seo"
+import Navbar from "../components/navbar"
 
 const Projects = () => {
   return (
     <Layout>
       <SEO title="Projects" />
+      <Navbar />
       <Hero
         terminal="~$ ls ~/projects"
         title="Projects"
