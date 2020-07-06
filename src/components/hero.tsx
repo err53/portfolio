@@ -4,8 +4,7 @@ import { Text, Stack, Heading } from "@chakra-ui/core"
 const Hero: React.FC<{
   terminal: string
   title?: string
-  description?: string
-}> = ({ terminal, title, description }) => {
+}> = ({ terminal, title }) => {
   return (
     <Stack width="100%" py="1em">
       <Text fontFamily="mono" fontSize={["2xl", "3xl"]}>

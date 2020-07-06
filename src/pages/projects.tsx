@@ -12,11 +12,8 @@ const Projects = ({ data }) => {
     <Layout>
       <SEO title="Projects" />
       <Navbar />
-      <Hero
-        terminal="> ls ~/projects/"
-        title="Projects"
-        description="Some of the things I've worked on"
-      />
+      <Hero terminal="> ls ~/projects/" title="Projects" />
+      <Text>Some of the things I've worked on</Text>
       <Stack>
         <List>
           {projects.map(({ node: project }) => (
