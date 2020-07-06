@@ -12,9 +12,11 @@ const Projects = ({ data }) => {
     <Layout>
       <SEO title="Projects" />
       <Navbar />
-      <Hero terminal="> ls ~/projects/" title="Projects" />
-      <Text>Some of the things I've worked on</Text>
-      <Stack>
+      <header>
+        <Hero terminal="> ls ~/projects/" title="Projects" />
+        <Text>Some of the things I've worked on</Text>
+      </header>
+      <Stack as="main">
         <List>
           {projects.map(({ node: project }) => (
             <ListItem key={project.id}>
