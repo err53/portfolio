@@ -28,6 +28,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    "gatsby-plugin-preact",
+    `gatsby-plugin-preact`,
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/content/projects`
+      }
+    },
   ],
 }
