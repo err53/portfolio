@@ -2,21 +2,31 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import { Link } from "gatsby"
+import { Link as GatsbyLink, GatsbyLinkProps } from "gatsby"
 import Layout from "./layout"
 import Hero from "./hero"
 import SEO from "./seo"
 import Navbar from "./navbar"
-import { Heading, Box, Text, Stack } from "@chakra-ui/core"
-const shortcodes = {
-  h1: props => <Heading {...props} as="h1" size="2xl" />,
-  h2: props => <Heading {...props} as="h2" size="xl" />,
-  h3: props => <Heading {...props} as="h3" size="lg" />,
-  h4: props => <Heading {...props} as="h4" size="md" />,
-  h5: props => <Heading {...props} as="h5" size="sm" />,
-  h6: props => <Heading {...props} as="h6" size="xs" />,
-  p: props => <Text {...props} />,
+import {
+  Heading,
+  HeadingProps,
+  Box,
+  Text,
+  TextProps,
+  Stack,
   Link,
+  LinkProps,
+} from "@chakra-ui/core"
+const shortcodes = {
+  h1: (props: HeadingProps) => <Heading {...props} as="h1" size="2xl" />,
+  h2: (props: HeadingProps) => <Heading {...props} as="h2" size="xl" />,
+  h3: (props: HeadingProps) => <Heading {...props} as="h3" size="lg" />,
+  h4: (props: HeadingProps) => <Heading {...props} as="h4" size="md" />,
+  h5: (props: HeadingProps) => <Heading {...props} as="h5" size="sm" />,
+  h6: (props: HeadingProps) => <Heading {...props} as="h6" size="xs" />,
+  p: (props: TextProps) => <Text {...props} />,
+  Link,
+  GatsbyLink,
 } // Provide common components here
 export default function PageTemplate({ data: { mdx } }) {
   return (
