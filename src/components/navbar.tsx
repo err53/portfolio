@@ -15,14 +15,14 @@ const Navbar = () => {
   ]
   return (
     <Flex width="100%">
-      <Box py="1em" pr="1em">
+      <Box pr="1em">
         <Link as={GatsbyLink} to="/">
           <Text as="b">Jason Huang</Text>
         </Link>
       </Box>
       <Spacer />
       {items.map(({ name, location }) => (
-        <Box padding="1em">
+        <Box px="1em">
           <Link as={GatsbyLink} to={location}>
             {name}
           </Link>
