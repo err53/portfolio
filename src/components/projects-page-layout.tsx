@@ -30,7 +30,7 @@ export default function PageTemplate({ data: { mdx } }) {
       <SEO title={mdx.frontmatter.title} />
       <Navbar />
       <Hero
-        terminal={`> ls ~/projects/${mdx.frontmatter.title.toLowerCase()}`}
+        terminal={`> ls ~${mdx.fields.slug}`}
         title={mdx.frontmatter.title}
       />
       <Box width="100%">
@@ -50,6 +50,9 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+      }
+      fields {
+        slug
       }
     }
   }
