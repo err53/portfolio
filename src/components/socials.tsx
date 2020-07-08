@@ -1,5 +1,5 @@
 import React from "react"
-import { FaGithub, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa"
 import { Flex, IconButton, Link } from "@chakra-ui/core"
 
 const Socials = () => {
@@ -14,6 +14,11 @@ const Socials = () => {
       icon: <FaTwitter />,
       location: "https://twitter.com/jhthenerd",
     },
+    {
+      label: "Email",
+      icon: <FaEnvelope />,
+      location: "mailto:jasonhuang@disroot.org "
+    }
   ]
   return (
     <Flex p="1em">

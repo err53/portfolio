@@ -1,10 +1,10 @@
-import React from "react"
-import { Text, Link, Stack } from "@chakra-ui/core"
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import SEO from "../components/seo"
-import Navbar from "../components/navbar"
-import { Link as GatsbyLink } from "gatsby"
+import React from "react";
+import { Text, Link, Stack } from "@chakra-ui/core";
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+import SEO from "../components/seo";
+import Navbar from "../components/navbar";
+import { Link as GatsbyLink } from "gatsby";
 
 const Home = () => {
   return (
@@ -32,15 +32,14 @@ const Home = () => {
           compuiter security, and have been known to do the occasional CTF.
         </Text>
         <Text>
-          Check out some of my work under{" "}
           <Link as={GatsbyLink} to="/projects">
-            projects
-          </Link>
-          , or follow me on my socials below. (I try not to use social media
-          that much, so email is probably the best way to reach me.)
+            Check out some of my projects,
+          </Link>{" "}
+          or follow me on my socials below. (I try not to use social media that
+          much, so email is probably the best way to reach me.)
         </Text>
       </Stack>
     </Layout>
-  )
-}
-export default Home
+  );
+};
+export default Home;

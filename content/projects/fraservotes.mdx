@@ -4,9 +4,21 @@ date: 2020-03-01
 ---
 
 Fraser Votes was an online voting system created for John Fraser, utilizing
-asymetric encryption for data security. The frontend was built in Gatsby, and
-we used Firebase for authentication, as a database, and for 
+asymetric encryption for data security. The frontend was built in Gatsby, and we
+used Firebase for authentication, as a database, and for hosting.
 
-It was built as a team project between
-[David Li](https://github.com/davidli3100),
-[James Ah Yong](https://github.com/retrocraft), and I
+The encryption was built using PGP: We allowed administrators to generate a
+private key, and post a public key to the database. Users would then encrypt
+their ID and votes with the private key, which allows administrators to validate
+and prevent double voting, while keeping votes private.
+
+While this approach clearly has flaws (namely the potential for administrators
+to tamper with the results), we felt that in an environment where these
+administrators can still override election results, this flaw was negligible,
+and the benefits of easier auditing and understanding of function made it worth
+the added insecurity.
+
+This project was made by [David Li][david], [James Ah Yong][james], and I.
+
+[david]: https://github.com/davidli3100
+[james]: https://github.com/retrocraft
