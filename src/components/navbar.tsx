@@ -1,6 +1,6 @@
 import React from "react"
 import { Flex, Box, Text, Link, Spacer } from "@chakra-ui/core"
-import { Link as GatsbyLink } from "gatsby"
+import FilteredLink from "./filteredLink"
 
 const Navbar = () => {
   const items = [
@@ -10,20 +10,20 @@ const Navbar = () => {
     },
     {
       name: "Resume",
-      location: "/resume",
+      location:
+        "https://media.githubusercontent.com/media/jhthenerd/resume/master/resume.pdf",
     },
   ]
   return (
-    <Flex width="100%">
-      <Box pr="1em">
-        <Link as={GatsbyLink} to="/">
+    <Flex as="nav" width="100%">
+      <Box pr="4" flex="1">
+        <Link as={FilteredLink} to="/">
           <Text as="b">Jason Huang</Text>
         </Link>
       </Box>
-      <Spacer />
       {items.map(({ name, location }) => (
-        <Box px="1em">
-          <Link as={GatsbyLink} to={location}>
+        <Box px="4">
+          <Link as={FilteredLink} to={location}>
             {name}
           </Link>
         </Box>

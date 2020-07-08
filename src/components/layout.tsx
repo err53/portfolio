@@ -5,14 +5,14 @@ import Socials from "./socials"
 const Layout: React.FC = ({ children }) => {
   return (
     <Stack
-      padding="1em"
+      padding="4"
       height="100vh"
       justify="space-between"
       align="center"
       maxWidth="3xl"
       mx="auto"
     >
-      <Stack as="body" width="100%" align="center">
+      <Stack as="body" width="100%">
         {children}
       </Stack>
       <Stack as="footer" width="100%" align="center">
