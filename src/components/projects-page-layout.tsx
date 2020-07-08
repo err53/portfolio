@@ -25,6 +25,7 @@ const shortcodes = {
   h5: (props: HeadingProps) => <Heading {...props} as="h5" size="sm" />,
   h6: (props: HeadingProps) => <Heading {...props} as="h6" size="xs" />,
   p: (props: TextProps) => <Text {...props} />,
+  a: (props: LinkProps) => <Link {...props} />,
   Link,
   GatsbyLink,
 } // Provide common components here

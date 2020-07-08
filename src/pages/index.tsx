@@ -34,7 +34,7 @@ const Home = () => {
         <Text>
           Check out some of my work under{" "}
           <Link as={GatsbyLink} to="/projects">
-            <Text as="b">Projects</Text>
+            projects
           </Link>
           , or follow me on my socials below. (I try not to use social media
           that much, so email is probably the best way to reach me.)

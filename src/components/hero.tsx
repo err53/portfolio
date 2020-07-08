@@ -10,9 +10,13 @@ const Hero: React.FC<{
       <Text fontFamily="mono" fontSize={["2xl", "3xl"]}>
         {terminal}
       </Text>
-      {title?(<Heading as="h1" fontSize={["5xl", "6xl"]}>
-        {title}
-      </Heading>):{}}
+      {title ? (
+        <Heading as="h1" fontSize={["5xl", "6xl"]}>
+          {title}
+        </Heading>
+      ) : (
+        {}
+      )}
     </Stack>
   )
 }

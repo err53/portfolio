@@ -10,7 +10,8 @@ const Navbar = () => {
     },
     {
       name: "Resume",
-      location: "https://media.githubusercontent.com/media/jhthenerd/resume/master/resume.pdf",
+      location:
+        "https://media.githubusercontent.com/media/jhthenerd/resume/master/resume.pdf",
     },
   ]
   return (
